@@ -10,7 +10,7 @@ const predictFromImage = async (req, res) => {
 
   const predictionResponse = {};
 
-  for (let i = 0; i < predictions.length; i++) {
+  for (let i = 0; i < labels.length; i++) {
     const label = labels[i];
     const probability = predictions[i];
     predictionResponse[label] = probability;
